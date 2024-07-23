@@ -2,12 +2,16 @@
 
   <PropertyGroup>
     <TargetFramework>net6.0</TargetFramework>
-    <Nullable>enable</Nullable>
+    <Nullable>disable</Nullable> 
     <ImplicitUsings>enable</ImplicitUsings>
     <RootNamespace>mf_dev_backend_2024</RootNamespace>
     <UserSecretsId>27c6d079-bbe8-4860-b012-8669b30f8eb5</UserSecretsId>
     <DockerDefaultTargetOS>Linux</DockerDefaultTargetOS>
   </PropertyGroup>
+
+  <ItemGroup>
+    <Compile Remove="Models\Proprietario.cs" />
+  </ItemGroup>
 
   <ItemGroup>
     <PackageReference Include="Microsoft.AspNetCore.Mvc.Razor.RuntimeCompilation" Version="6.0.19" />
